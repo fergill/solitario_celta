@@ -40,4 +40,25 @@
     <string name="prefLink2Summary">Accede a la web de MiW</string>
     <string name="prefLink2Data">http://miw.etsisi.upm.es/</string>
 
+    <!-- Reiniciar partida -->
+    <string name="reiniciarTitle">¿Deseas reiniciar?</string>
+    <string name="reiniciarMessage">Si reinicias, perderás
+        la partida y los puntos asociados a ella.</string>
+    <string name="txtDialogoReiniciarAfirmativo">Sí</string>
+    <string name="txtDialogoReiniciarNegativo">No</string>
+
+    <!-- Guardar en Tarjeta SD -->
+    <string name="tarjetaSD">guardaEnTarjetaSD</string>
+    <bool name="default_tarjetaSD">false</bool>
+    <string name="default_nombreFichero">partidaSolitarioCelta.txt</string>
+    <string name="txtErrorTarjetaSD">Memoria externa no disponible</string>
+    <string name="partidaGuardadaOk">Partida guardada con éxito</string>
+
+    <!-- Recuperar Partida -->
+    <string name="txtErrorRecuperarPartida">No existen partidas a recuperar</string>
+    <string name="recuperarTitle">Recuperar Partida</string>
+    <string name="recuperarMessage">Si recuperas la partida guardada,
+    perderás la partida actual</string>
+    <string name="txtDialogoRecuperarAfirmativo">Sí</string>
+    <string name="txtDialogoRecuperarNegativo">No</string>
 </resources>

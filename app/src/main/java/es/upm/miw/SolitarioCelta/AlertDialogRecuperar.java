@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatDialogFragment;
 
 import org.jetbrains.annotations.NotNull;
 
-public class AlertDialogReiniciar extends AppCompatDialogFragment {
+public class AlertDialogRecuperar extends AppCompatDialogFragment {
     @NotNull
     @Override
     public AppCompatDialog onCreateDialog(Bundle savedInstanceState) {
@@ -17,20 +17,20 @@ public class AlertDialogReiniciar extends AppCompatDialogFragment {
 
         AlertDialog.Builder builder = new AlertDialog.Builder(main);
         builder
-                .setTitle(R.string.reiniciarTitle)
-                .setMessage(R.string.reiniciarMessage)
+                .setTitle(R.string.recuperarTitle)
+                .setMessage(R.string.recuperarMessage)
                 .setPositiveButton(
-                        getString(R.string.txtDialogoReiniciarAfirmativo),
+                        getString(R.string.txtDialogoRecuperarAfirmativo),
                         new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
-                                main.miJuegoVM.reiniciar();
+                                main.recuperarPartida();
                                 main.mostrarTablero();
                             }
                         }
                 )
                 .setNegativeButton(
-                        getString(R.string.txtDialogoReiniciarNegativo),
+                        getString(R.string.txtDialogoRecuperarNegativo),
                         new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
