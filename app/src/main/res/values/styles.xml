@@ -5,10 +5,10 @@
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
 
-    <style name="SCeltaRadioButton" >
+    <style name="SCeltaRadioButton">
         <item name="android:layout_width">@dimen/button_side</item>
         <item name="android:layout_height">@dimen/button_side</item>
-        <!-- item name="android:buttonTint">#3F51B5</item -->
+        <!--item name="android:buttonTint">#3F51B5</item-->
         <item name="android:onClick">fichaPulsada</item>
     </style>
 

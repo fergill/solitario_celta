@@ -1,36 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <PreferenceCategory app:title="@string/prefTituloCategoria1">
         <EditTextPreference
-            app:key="nombreJugador"
+            app:key="pref_NombreJugador"
+            app:summary="@string/prefTextoNombreJugador"
             app:title="@string/prefTituloNombreJugador"
-            app:summary="@string/prefTextoNombreJugador" />
+            app:useSimpleSummaryProvider="true" />
     </PreferenceCategory>
 
-    <PreferenceCategory app:title="@string/prefTituloCategoria2">
-        <!-- TODO Añadir otros ajustes -->
-    </PreferenceCategory>
 
     <PreferenceCategory app:title="@string/prefTituloCategoria3">
         <Preference
-            app:title="@string/prefLink1Title"
             android:icon="@drawable/ic_youtube"
-            app:summary="@string/prefLink1Summary">
+            app:summary="@string/prefLink1Summary"
+            app:title="@string/prefLink1Title">
             <intent
                 android:action="android.intent.action.VIEW"
-                android:data="@string/prefLink1Data"
-                />
+                android:data="@string/prefLink1Data" />
         </Preference>
         <Preference
-            app:title="@string/prefLink2Title"
             app:icon="@mipmap/ic_miw_launcher_rounded"
-            app:summary="@string/prefLink2Summary">
+            app:summary="@string/prefLink2Summary"
+            app:title="@string/prefLink2Title">
             <intent
                 android:action="android.intent.action.VIEW"
-                android:data="@string/prefLink2Data"
-                />
+                android:data="@string/prefLink2Data" />
         </Preference>
     </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/prefTituloCategoria4">
+
+        <ListPreference
+            app:defaultValue="1"
+            app:entries="@array/colorsArray"
+            app:entryValues="@array/colorsValues"
+            app:key="color"
+            app:summary="Elige el color que prefieras"
+            app:title="Color de las fichas" />
+    </PreferenceCategory>
+
 </PreferenceScreen>

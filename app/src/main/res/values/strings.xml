@@ -6,6 +6,7 @@
     <string name="txtSinImplementar">¡No implementado aún!</string>
 
     <!-- Opciones -->
+    <string name="txtPausarPartida">Pausar Partida</string>
     <string name="txtReiniciarPartida">Reiniciar</string>
     <string name="txtOpcionGuardar">Guardar Partida</string>
     <string name="txtOpcionRecuperar">Recuperar Partida</string>
@@ -31,6 +32,9 @@
     <string name="prefTextoNombreJugador">Pulse para teclear el nombre del jugador</string>
     <string name="prefTituloCategoria2">Ajustes del juego</string>
     <string name="prefTituloCategoria3">Más información…</string>
+    <string name="prefTituloCategoria4">Configuración</string>
+    <string name="defaultColor">1</string>
+    <string name="default_ColorKey">color</string>
 
     <string name="prefLink1Title">Video Solitario Celta</string>
     <string name="prefLink1Summary">Solución al juego</string>
@@ -44,8 +48,6 @@
     <string name="reiniciarTitle">¿Deseas reiniciar?</string>
     <string name="reiniciarMessage">Si reinicias, perderás
         la partida y los puntos asociados a ella.</string>
-    <string name="txtDialogoReiniciarAfirmativo">Sí</string>
-    <string name="txtDialogoReiniciarNegativo">No</string>
 
     <!-- Guardar en Tarjeta SD -->
     <string name="tarjetaSD">guardaEnTarjetaSD</string>
@@ -55,10 +57,31 @@
     <string name="partidaGuardadaOk">Partida guardada con éxito</string>
 
     <!-- Recuperar Partida -->
-    <string name="txtErrorRecuperarPartida">No existen partidas a recuperar</string>
+    <string name="txtErrorRecuperarPartida">No hay partidas a recuperar</string>
     <string name="recuperarTitle">Recuperar Partida</string>
     <string name="recuperarMessage">Si recuperas la partida guardada,
     perderás la partida actual</string>
-    <string name="txtDialogoRecuperarAfirmativo">Sí</string>
-    <string name="txtDialogoRecuperarNegativo">No</string>
+
+    <!-- Guardar Puntos -->
+    <string name="txtGuardarPuntos">Puntos guardados con éxito</string>
+    <string name="key_NombreJugador">pref_NombreJugador</string>
+    <string name="title_NombreJugador">Nombre Jugador</string>
+    <string name="default_NombreJugador">Jugador 0</string>
+
+    <!-- Mejores Resultados -->
+    <string name="txtMejoresResultados">Mejores Resultados</string>
+    <string name="txtMejoresResultadosPosicion">&#x1f3c6;</string>
+    <string name="txtMejoresResultadosFichas">Fichas</string>
+    <string name="txtMejoresResultadosNombreJugador">Jugador</string>
+    <string name="txtMejoresResultadosFecha">Fecha</string>
+
+    <!-- Diálogo Borrar resultados -->
+    <string name="txtDialogoBorrarResultadosTitulo">Limpiar resultados</string>
+    <string name="txtDialogoBorrarResultadosPregunta">¿Estás seguro de que quieres
+        borrar todos los resultados?</string>
+
+    <!-- Compartidos -->
+    <string name="txtDialogoAfirmativo">Sí</string>
+    <string name="txtDialogoNegativo">No</string>
+
 </resources>

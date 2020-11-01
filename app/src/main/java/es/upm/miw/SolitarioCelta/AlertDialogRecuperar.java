@@ -20,21 +20,22 @@ public class AlertDialogRecuperar extends AppCompatDialogFragment {
                 .setTitle(R.string.recuperarTitle)
                 .setMessage(R.string.recuperarMessage)
                 .setPositiveButton(
-                        getString(R.string.txtDialogoRecuperarAfirmativo),
+                        getString(R.string.txtDialogoAfirmativo),
                         new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 main.recuperarPartida();
-                                main.mostrarTablero();
+                                main.cronometroComando.startCronometro();
                             }
                         }
                 )
                 .setNegativeButton(
-                        getString(R.string.txtDialogoRecuperarNegativo),
+                        getString(R.string.txtDialogoNegativo),
                         new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 main.mostrarTablero();
+                                main.cronometroComando.startCronometro();
                             }
                         }
                 );

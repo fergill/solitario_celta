@@ -10,10 +10,10 @@ import androidx.appcompat.app.AppCompatDialogFragment;
 import org.jetbrains.annotations.NotNull;
 
 public class AlertDialogFragment extends AppCompatDialogFragment {
-	@NotNull
+    @NotNull
     @Override
-	public AppCompatDialog onCreateDialog(Bundle savedInstanceState) {
-		final MainActivity main = (MainActivity) getActivity();
+    public AppCompatDialog onCreateDialog(Bundle savedInstanceState) {
+        final MainActivity main = (MainActivity) getActivity();
 
         AlertDialog.Builder builder = new AlertDialog.Builder(main);
         builder
@@ -26,6 +26,8 @@ public class AlertDialogFragment extends AppCompatDialogFragment {
                             public void onClick(DialogInterface dialog, int which) {
                                 main.miJuegoVM.reiniciar();
                                 main.mostrarTablero();
+                                main.cronometroComando.resetCronometro();
+                                main.cronometroComando.startCronometro();
                             }
                         }
                 )
@@ -39,6 +41,6 @@ public class AlertDialogFragment extends AppCompatDialogFragment {
                         }
                 );
 
-		return builder.create();
-	}
+        return builder.create();
+    }
 }

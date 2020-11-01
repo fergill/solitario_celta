@@ -20,21 +20,24 @@ public class AlertDialogReiniciar extends AppCompatDialogFragment {
                 .setTitle(R.string.reiniciarTitle)
                 .setMessage(R.string.reiniciarMessage)
                 .setPositiveButton(
-                        getString(R.string.txtDialogoReiniciarAfirmativo),
+                        getString(R.string.txtDialogoAfirmativo),
                         new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 main.miJuegoVM.reiniciar();
                                 main.mostrarTablero();
+                                main.cronometroComando.resetCronometro();
+                                main.cronometroComando.startCronometro();
                             }
                         }
                 )
                 .setNegativeButton(
-                        getString(R.string.txtDialogoReiniciarNegativo),
+                        getString(R.string.txtDialogoNegativo),
                         new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 main.mostrarTablero();
+                                main.cronometroComando.startCronometro();
                             }
                         }
                 );

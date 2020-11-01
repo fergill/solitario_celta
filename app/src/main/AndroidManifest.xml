@@ -15,7 +15,7 @@
         tools:ignore="GoogleAppIndexingWarning">
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name" >>
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -25,6 +25,17 @@
             android:name=".SCeltaPrefs"
             android:theme="@style/AppTheme"
             android:label="@string/preferencesText" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SettingsActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".MejoresResultadosActivity"
+            android:theme="@style/AppTheme"
+            android:label="@string/txtMejoresResultados" >
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
